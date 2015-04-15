@@ -2,7 +2,7 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'oci:dbname=ATLDEVT;charset=CL8MSWIN1251',
-    'username' => 'atlant',
-    'password' => 'xdrtgf'
+    'dsn' => 'oci:dbname=BEACON_TEST;charset=CL8MSWIN1251',
+    'username' => 'basdb',
+    'password' => 'EckeubDsxbcktybq'
 ];

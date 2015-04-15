@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
 					])->checkbox([],false) ?>
 					
 					<div class="form-group">
-						<div class="col-md-6 col-md-offset-4">
+						<div class="col-md-6 col-md-offset-5">
 							<?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
 						</div>
 					</div>

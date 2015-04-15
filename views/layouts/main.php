@@ -36,7 +36,7 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Домой', 'url' => ['/']],
-                    ['label' => 'О продукие', 'url' => ['/site/about']],
+                    ['label' => 'О продукте', 'url' => ['/site/about']],
                     ['label' => 'Контакты', 'url' => ['/site/contact']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Вход', 'url' => ['/auth/login']] :
@@ -55,7 +55,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="text-center">&copy; ЗАО &laquo;АВК-Коммьюникейшнз&raquo; <?= date('Y') ?></p>
+            <p class="text-center">&copy; ЗАО &laquo;АВК-Коммьюникейшнз&raquo;, <?= date('Y') ?></p>
             <!--<p class="pull-right"><?= Yii::powered() ?></p>-->
         </div>
     </footer>
