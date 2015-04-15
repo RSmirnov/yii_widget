@@ -1,21 +1,13 @@
 <?php
 use yii\helpers\Html;
+use app\assets\GooglePlaceAutoload;
 /* @var $this yii\web\View */
-$this->title = 'Account Receiveable';
+$this->title = 'Макет Виджеты';
 ?>
 <div class="site-index">
-	<?php Html::encode($result) ?>
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
     <div class="body-content">
-
-        <div class="row">
+        <?php echo GooglePlaceAutoload::widget(['location'=>['lat'=>50, 'lng'=>50]]); ?>
+       <!-- <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
@@ -46,7 +38,7 @@ $this->title = 'Account Receiveable';
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
-        </div>
+        </div>-->
 
     </div>
 </div>

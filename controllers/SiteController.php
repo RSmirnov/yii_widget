@@ -3,11 +3,27 @@
 namespace app\controllers;
 
 use Yii;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+        ];
+    }
 
     public function actions()
     {
@@ -24,11 +40,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-		$connection=Yii::$app->db;
-		$sql='select * from v$version';
-		$command=$connection->createCommand($sql);
-		$result = $command->queryAll();
-		return $this->render('index', ['result' => var_dump($result)]);
+        $result=Yii::$app->db->createCommand('select * from v$version')->queryAll();
+		return $this->render('index'/*, [
+            'result' => var_dump($result)
+        ]*/);
     }
 
     public function actionContact()
