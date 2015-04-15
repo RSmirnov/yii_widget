@@ -6,13 +6,13 @@
  * Time: 2:03
  */
 
-namespace app\assets;
+namespace app\widgets\selections;
 
 use yii\bootstrap\Widget;
 use yii\helpers\Html;
 use Yii;
 
-class GooglePlaceAutoload extends Widget {
+class SelectionsAutoload extends Widget {
 
     public $model;
     public $attribute = 'google-map-input';
@@ -41,7 +41,7 @@ class GooglePlaceAutoload extends Widget {
     public function registerAssets()
     {
         $view = $this->getView();
-        GoogleAsset::register($view);
+        SelectionsAsset::register($view);
     }
 
     private function getJs() {

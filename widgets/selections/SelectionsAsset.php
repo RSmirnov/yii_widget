@@ -6,16 +6,16 @@
  * Time: 2:00
  */
 
-namespace app\assets;
+namespace app\widgets\selections;
 
 use yii\web\AssetBundle;
 
-class GoogleAsset extends AssetBundle {
+class SelectionsAsset extends AssetBundle {
 
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath  = '@app/widgets/selections/assets';
+
     public $css = [
-        'css/site.css'
+        'css/selections.css'
     ];
 
     public $js = [

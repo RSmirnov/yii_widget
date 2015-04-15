@@ -1,12 +1,12 @@
 <?php
 use yii\helpers\Html;
-use app\assets\GooglePlaceAutoload;
+use app\widgets\selections\SelectionsAutoload;
 /* @var $this yii\web\View */
 $this->title = 'Макет Виджеты';
 ?>
 <div class="site-index">
     <div class="body-content">
-        <?php echo GooglePlaceAutoload::widget(['location'=>['lat'=>50, 'lng'=>50]]); ?>
+        <?php echo SelectionsAutoload::widget(['location'=>['lat'=>50, 'lng'=>50]]); ?>
        <!-- <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>
