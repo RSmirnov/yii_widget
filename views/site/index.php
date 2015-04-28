@@ -5,9 +5,11 @@ use app\widgets\selections\SelectionsAutoload;
 $this->title = 'Макет Виджеты';
 ?>
 <div class="site-index">
-    <div class="body-content">
+    <div class="jumbotron">
         <?php echo SelectionsAutoload::widget(['location'=>['lat'=>50, 'lng'=>50]]); ?>
-       <!-- <div class="row">
+    </div>
+    <div class="body-content">
+       <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>
 
@@ -38,7 +40,7 @@ $this->title = 'Макет Виджеты';
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
-        </div>-->
+        </div>
 
     </div>
 </div>

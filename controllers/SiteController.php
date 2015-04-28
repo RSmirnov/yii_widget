@@ -15,6 +15,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
+				'except' => ['about'],
                 'rules' => [
                     [
                         'allow' => true,

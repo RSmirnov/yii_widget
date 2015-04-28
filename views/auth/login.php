@@ -30,11 +30,6 @@ $this->title = 'Единый вход в систему';
 					
 					<?= $form->field($model, 'password')->passwordInput() ?>
 					
-					<!--<?= $form->field($model, 'rememberMe', [
-						'template' => "<div class=\"col-md-6 col-md-offset-4\">{input}{label}</div>\n<div class=\"col-md-6 col-md-offset-4\">{error}</div>",
-						'labelOptions' => ['class' => 'label', 'style' => 'color: #000; font-weight: normal; font-size: 95%;'],
-					])->checkbox([],false) ?>-->
-					
 					<div class="form-group">
 						<div class="col-md-6 col-md-offset-5">
 							<?= Html::submitButton('Войти в систему', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
