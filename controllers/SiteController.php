@@ -41,7 +41,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $result=Yii::$app->db->createCommand('select * from v$version')->queryAll();
+        //$result=Yii::$app->db->createCommand('select * from v$version')->queryAll();
 		return $this->render('index'/*, [
             'result' => var_dump($result)
         ]*/);
