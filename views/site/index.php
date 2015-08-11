@@ -1,6 +1,7 @@
 <?php
-use yii\helpers\Html;
+
 use app\widgets\yiiwidget\YiiWidgetAutoload;
+
 /* @var $this yii\web\View */
 $this->title = 'Макет Виджеты';
 ?>

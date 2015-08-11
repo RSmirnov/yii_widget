@@ -19,6 +19,8 @@ $this->title = 'О продукте';
 
 						<code><?= __FILE__ ?></code>
 
+                        <p><pre><?php print_r($result); ?></pre></p>
+
 					</div>
 				</div>
 

@@ -41,10 +41,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        //$result=Yii::$app->db->createCommand('select * from v$version')->queryAll();
-		return $this->render('index'/*, [
-            'result' => var_dump($result)
-        ]*/);
+		return $this->render('index');
     }
 
     public function actionContact()
@@ -63,6 +60,10 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        return $this->render('about');
+        $result=Yii::$app->db->createCommand('select * from v$version')->queryAll();
+
+        return $this->render('about', [
+            'result' => $result
+        ]);
     }
 }

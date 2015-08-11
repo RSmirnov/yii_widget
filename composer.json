@@ -18,7 +18,8 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-		"bower-asset/w2ui": "*"
+		"bower-asset/w2ui": "*",
+        "apaoww/yii2-oci8": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
